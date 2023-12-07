@@ -107,7 +107,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=fZ4cPoEL32Q"
+                <a href="https://www.youtube.com/watch?v=xiRH4Q6B3Yk"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -162,10 +162,10 @@
         <div class="content has-text-justified">
           <img class="thumbnail" src="./static/images/Framework.png" style="width:100%; margin-bottom:20px">
           <p>
-            (1) Our video-NeRF model represents the input video as the 3D foreground canonical human space coupled with the deformation field and the 3D background static space. 
-            (2) Orange flowchart: Given the reference subject image, we edit the animatable canonical human space under multi-view multi-pose configurations by leveraging reconstruction losses, 2D personalized diffusion priors, 3D diffusion priors, and local parts super-resolution.
+            (1) Our video-NeRF model represents the input video as a 3D dynamic human space coupled with the deformation field and a 3D static background space.
+            (2) Orange flowchart: Given the reference subject image, we edit the animatable 3D dynamic human space under multi-view multi-pose configurations by leveraging reconstruction losses, 2D personalized diffusion priors, 3D diffusion priors, and local parts super-resolution.
             (3) Green flowchart: A style transfer loss in feature spaces is utilized to transfer the reference style to our 3D background model.
-            (4) Edited videos can be accordingly rendered by volume rendering in the edited video-NeRF model under source video camera poses.
+            (4) Edited videos can be accordingly rendered by volume rendering in the edited video-NeRF model under source video camera poses, and we can also achieve high-fidelity free-viewpoint renderings of edited dynamic scenes.
           </p>
         </div>
       </div>
@@ -178,13 +178,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Despite remarkable research advances in diffusion-based video editing, existing methods are limited to short-length videos due to the contradiction between long-range consistency and frame-wise editing. Recent approaches attempt to tackle this challenge by introducing video-2D representations to degrade video editing to image editing. However, they encounter significant difficulties in handling large-scale motion- and view-change videos especially for human-centric videos.
+            Despite recent progress in diffusion-based video editing, existing methods are limited to short-length videos due to the contradiction between long-range consistency and frame-wise editing. Prior attempts to address this challenge by introducing video-2D representations encounter significant difficulties with large-scale motion- and view-change videos, especially in human-centric scenarios.
           </p>
           <p>
-            This motivates us to introduce the dynamic Neural Radiance Fields (NeRF) as the human-centric video representation to ease the video editing problem to a 3D space editing task. As such, editing can be performed in the 3D spaces and propagated to the entire video via the deformation field. To provide finer and direct controllable editing, we propose the image-based 3D space editing pipeline with a set of effective designs. These include multi-view multi-pose Score Distillation Sampling (SDS) from both 2D personalized diffusion priors and 3D diffusion priors, reconstruction losses on the reference image, text-guided local parts super-resolution, and style transfer for 3D background space.
+            To overcome this, we propose to introduce the dynamic Neural Radiance Fields (NeRF) as the innovative video representation, where the editing can be performed in the 3D spaces and propagated to the entire video via the deformation field. To provide consistent and controllable editing, we propose the image-based video-NeRF editing pipeline with a set of innovative designs, including multi-view multi-pose Score Distillation Sampling (SDS) from both the 2D personalized diffusion prior and 3D diffusion prior, reconstruction losses, text-guided local parts super-resolution, and style transfer.
           </p>
           <p>
-            Extensive experiments demonstrate that our method, dubbed as DynVideo-E, significantly outperforms SOTA approaches on two challenging datasets by a large margin of 50% ∼ 95% in terms of human preference. Our code and data will be released to the community.
+            Extensive experiments demonstrate that our method, dubbed as DynVideo-E, significantly outperforms SOTA approaches on two challenging datasets by a large margin of 50% ∼ 95% in terms of human preference. Our code will be released to the community.
           </p>
         </div>
       </div>
@@ -196,7 +196,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/fZ4cPoEL32Q"
+          <iframe src="https://www.youtube.com/embed/xiRH4Q6B3Yk"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
